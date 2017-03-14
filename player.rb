@@ -9,8 +9,13 @@ module TwO_O_Math
       @lives = 3
     end
 
-    def drain_life
-      @lives -= 1
+    def drain_life?(good_answer)
+      if good_answer
+        false
+      else
+        puts 'ouch!'
+        @lives -= 1
+      end
     end
 
   end
